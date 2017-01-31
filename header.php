@@ -95,8 +95,7 @@
 
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?> <br><small><a href="http://wikity.cc/">Go to wikity.cc.</a>
-             <br><a href="/home/">Go to home.</a></small></p>
+						<p class="site-description"><?php echo $description; ?> <br><small><a href="http://wikity.cc/">Go to wikity.cc.</a></small></p>
 					<?php endif;
 				?>
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
