@@ -239,7 +239,7 @@ get_header();
 	  
 		<main id="main" class="site-main" role="main">
 
-<?php if ( is_home() or is_search() or is_category() ) : ?>
+<?php if ( is_home() or is_search() or is_category()) : ?>
 
 
     <?php if ( current_user_can( 'edit_posts' ) || current_user_can( get_post_type_object( 'post' )->cap->create_posts ) ) : ?>
@@ -339,7 +339,7 @@ jQuery(document).ready(function($){
 			<br><small><em><?php echo $description; ?></em></small><br>
 	<?php endif; ?>
 	<br><small>You can read your cards by clicking the title on the card. If you are logged in, edit them by clicking the small dot after the title (full editor) or clicking on the text of the card (quick editor).</small><br><br>
-	<small>Additional options: <a href="/home">Home</a>,
+	<small>Additional options: 
 	<a href="javascript:q=location.href;if(document.getSelection){d=document.getSelection();}else{d='';};p=document.title;void(open('<?php echo get_site_url() ?>/?sourceurl='+encodeURIComponent(q)+'&selection='+encodeURIComponent(d)+'&title=','Wikity','toolbar=no,width=700,height=500'));">Wik-it!</a>,
 						<?php wp_loginout($_SERVER['REQUEST_URI']); ?>, <a href="?s=Settings::">Settings</a>, <a href="?s=Help::">How-to</a>, <a href="https://github.com/michaelarthurcaulfield/wikity-zero/archive/master.zip">Get Wikity</a><br>
 						<form method="post" action="./">Search:
